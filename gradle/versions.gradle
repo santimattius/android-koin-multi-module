@@ -1,0 +1,15 @@
+project.ext {
+    lifecycle_runtime_version = '2.5.1'
+    core_ktx_version = '1.9.0'
+
+    compose_ui_version = '1.2.0'
+    material_compose_version = '1.2.1'
+    activity_compose_version = '1.5.1'
+
+}
+
+allprojects {
+    dependencies {
+        apply from: "$rootDir/gradle/groups.gradle"
+    }
+}
