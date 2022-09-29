@@ -3,6 +3,9 @@ Using Koin into modular app
 
 ## Architecture
 
+<p align="center">
+  <img width="600" src="https://github.com/santimattius/android-koin-multi-module/blob/master/images/architecture.png?raw=true" alt="App Capture"/>
+</p>
 
 ## Provide Koin definitions
 
@@ -33,6 +36,9 @@ Create META-INF.services y your module or app.
 
 Path: resources>META-INF>services and new file with name com.santimattius.koin.koin_multi_module.KoinDependencies.
 
+<p align="left">
+  <img width="800" src="https://github.com/santimattius/android-koin-multi-module/blob/master/images/Captura%20de%20Pantalla%202022-09-29%20a%20la(s)%2020.15.03.png?raw=true" alt="App Capture"/>
+</p>
 
 ## Configure your MainApplication
 
