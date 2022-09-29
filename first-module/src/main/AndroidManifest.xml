@@ -4,9 +4,19 @@
     <application>
         <activity
             android:name=".ui.FirstModuleActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_first_module"
             android:theme="@style/Theme.KoinMultiModule">
+
+            <intent-filter android:label="@string/title_activity_first_module">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="first_module"
+                    android:scheme="module" />
+            </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

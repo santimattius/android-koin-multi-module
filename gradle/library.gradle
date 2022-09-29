@@ -1,21 +1,13 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'com.google.devtools.ksp' version '1.7.0-1.0.6'
-}
-
 android {
-    namespace 'com.santimattius.koin.multimodule'
+
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.santimattius.koin.multimodule"
         minSdk 23
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
         vectorDrawables {
             useSupportLibrary true
         }
@@ -45,17 +37,4 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
-}
-
-dependencies {
-
-    implementation project(path: ':first-module')
-    implementation project(path: ':second-module')
-    implementation project(path: ':koin-multi-module')
-    implementation project(path: ':shared')
-
-    androidCoreDependencies()
-    lifecycleDependencies()
-    composeDependencies()
-    koinDependencies()
 }

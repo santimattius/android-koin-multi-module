@@ -7,10 +7,10 @@ typealias Dependencies = Module
 
 interface KoinDependencies {
     fun modules(): List<Module>
-    fun priority() = ModulePriority.NONE
+    fun priority() = ModuleDefinition.NONE
 }
 
-enum class ModulePriority(val value: Int) {
+enum class ModuleDefinition(val value: Int) {
     CORE(1),
     LIBRARY(2),
     FEATURE(3),

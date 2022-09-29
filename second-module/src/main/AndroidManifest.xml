@@ -3,13 +3,23 @@
 
     <application>
         <activity
-            android:name=".SecondModuleActivity"
-            android:exported="false"
+            android:name=".ui.SecondModuleActivity"
+            android:exported="true"
             android:label="@string/title_activity_second_module"
             android:theme="@style/Theme.KoinMultiModule">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            <intent-filter android:label="@string/title_activity_second_module">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="second_module"
+                    android:scheme="module" />
+            </intent-filter>
         </activity>
     </application>
 
