@@ -4,7 +4,6 @@ import org.koin.core.module.Module
 
 typealias Dependencies = Module
 
-
 interface KoinDependencies {
     fun modules(): List<Module>
     fun scope() = ModuleScope.NONE
