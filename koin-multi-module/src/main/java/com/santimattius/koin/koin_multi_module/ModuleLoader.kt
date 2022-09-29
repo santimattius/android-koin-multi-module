@@ -13,7 +13,7 @@ class ModuleLoader {
         }
         val modules = mutableListOf<Module>()
         providers.sortedBy {
-            it.priority().value
+            it.scope().value
         }.forEach { modules.addAll(it.modules()) }
         return modules
     }
