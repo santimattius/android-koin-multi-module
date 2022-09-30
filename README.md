@@ -13,7 +13,7 @@ Implement KoinDependencies interfaces for example:
 
 ```kotlin
 
-cclass FirstModuleDependencies : KoinDependencies {
+class FirstModuleDependencies : KoinDependencies {
 
     override fun scope(): ModuleScope = ModuleScope.FEATURE
 
